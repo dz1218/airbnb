@@ -9,6 +9,7 @@ import AppHeader from "./components/appHeader";
 const App = memo(() => {
   return (
     <div className="app">
+      <h2>哈哈哈哈哈哈哈</h2>
       <AppHeader></AppHeader>
       <div className="page">{useRoutes(routes)}</div>
       <AppFooter></AppFooter>
