@@ -28,7 +28,6 @@ const App = memo(() => {
       <div className="header">header</div>
       <div className="content">{useRoutes(routes)}</div>
       <div className="footer">footer</div>
-      <div>test</div>
     </div>
   )
 })
