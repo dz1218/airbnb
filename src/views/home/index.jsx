@@ -1,9 +1,27 @@
-// import hyRequest from "@/service";
-// import { memo, useEffect, useState } from "react";
-import { memo } from "react";
+import hyRequest from "@/service"
+import { memo, useEffect, useState } from "react"
 
 const Home = memo(() => {
-  return <div>home page</div>;
-});
+  const [highScore, sethighScore] = useState([])
 
-export default Home;
+  useEffect(() => {
+    hyRequest
+      .get({
+        url: "/home/highScore"
+      })
+      .then((res) => {
+        sethighScore(res.list)
+        // console.log(highScore)
+      })
+  })
+
+  return (
+    <div>
+      {highScore.map((item) => (
+        <div>{item.name}</div>
+      ))}
+    </div>
+  )
+})
+
+export default Home

@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "axios"
 import { BASE_URL, TIMEOUT } from "./config"
 
 class HYRequest {
@@ -8,11 +8,14 @@ class HYRequest {
       timeout
     })
 
-    this.instance.interceptors.response.use((res) => {
-      return res.data
-    }, err => {
-      return err
-    })
+    this.instance.interceptors.response.use(
+      (res) => {
+        return res.data
+      },
+      (err) => {
+        return err
+      }
+    )
   }
 
   request(config) {
@@ -28,6 +31,4 @@ class HYRequest {
   }
 }
 
-
 export default new HYRequest(BASE_URL, TIMEOUT)
-

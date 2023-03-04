@@ -1,4 +1,4 @@
-import hyRequest from "..";
+import hyRequest from "../index"
 
 export function getHomeGoodPriceData() {
   return hyRequest.get({
@@ -6,13 +6,11 @@ export function getHomeGoodPriceData() {
   })
 }
 
-
 export function getHomeHighScoreData() {
   return hyRequest.get({
     url: "/home/highscore"
   })
 }
-
 
 export function getHomeDiscountData() {
   return hyRequest.get({
@@ -20,20 +18,17 @@ export function getHomeDiscountData() {
   })
 }
 
-
 export function getHomeHotRecommendData() {
   return hyRequest.get({
     url: "/home/hotrecommenddest"
   })
 }
 
-
 export function getHomeLongforData() {
   return hyRequest.get({
     url: "/home/longfor"
   })
 }
-
 
 export function getHomePlusData() {
   return hyRequest.get({
