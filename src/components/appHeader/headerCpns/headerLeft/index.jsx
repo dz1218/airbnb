@@ -1,6 +1,6 @@
-import IconLogo from "@/assets/svg/icon_logo";
-import React, { memo } from "react";
-import { HeaderLeftWrapper } from "./style";
+import IconLogo from "@/assets/svg/icon_logo"
+import React, { memo } from "react"
+import { HeaderLeftWrapper } from "./style"
 
 const HeaderLeft = memo(() => {
   return (
@@ -12,7 +12,7 @@ const HeaderLeft = memo(() => {
         <div className="text"></div>
       </div>
     </HeaderLeftWrapper>
-  );
-});
+  )
+})
 
-export default HeaderLeft;
+export default HeaderLeft
