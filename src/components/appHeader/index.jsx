@@ -1,17 +1,17 @@
-import { memo } from "react";
-import HeaderCenter from "./headerCpns/headerCenter";
-import HeaderLeft from "./headerCpns/headerLeft";
-import HeaderRight from "./headerCpns/headerRight";
-import { HeaderWrapper } from "./style";
+import { memo } from "react"
+import HeaderCenter from "./headerCpns/headerCenter"
+import HeaderLeft from "./headerCpns/headerLeft"
+import HeaderRight from "./headerCpns/headerRight"
+import { HeaderWrapper } from "./style"
 
 const AppHeader = memo(() => {
   return (
     <HeaderWrapper>
-      <HeaderLeft></HeaderLeft>
-      <HeaderCenter></HeaderCenter>
-      <HeaderRight></HeaderRight>
+      <HeaderLeft />
+      <HeaderCenter />
+      <HeaderRight />
     </HeaderWrapper>
-  );
-});
+  )
+})
 
-export default AppHeader;
+export default AppHeader
