@@ -20,6 +20,9 @@ export const HeaderRightWrapper = styled.div`
       cursor: pointer;
       border-radius: 22px;
       ${(props) => props.theme.mixin.boxShadow}
+      &:hover {
+        background-color: #f7f7f7;
+      }
     }
   }
 

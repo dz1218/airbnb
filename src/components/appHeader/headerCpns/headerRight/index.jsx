@@ -11,13 +11,13 @@ const HeaderRight = memo(() => {
         <span className="btn">登录</span>
         <span className="btn">注册</span>
         <span className="btn">
-          <IconGlobal></IconGlobal>
+          <IconGlobal />
         </span>
       </div>
 
       <div className="profile">
-        <IconMenu></IconMenu>
-        <IconAvatar></IconAvatar>
+        <IconMenu />
+        <IconAvatar />
       </div>
     </HeaderRightWrapper>
   );
