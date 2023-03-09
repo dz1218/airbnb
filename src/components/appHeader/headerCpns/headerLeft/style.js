@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const HeaderLeftWrapper = styled.div`
-  flex: 1;
+  flex: 1 0 140px;
 
-  .logo {
+  .header-left {
+    display: flex;
     margin-left: 80px;
-    color: ${(props) => props.theme.color.primaryColor};
-    cursor: pointer;
+
+    .logo {
+      color: ${(props) => props.theme.color.primaryColor};
+      cursor: pointer;
+    }
   }
 `;

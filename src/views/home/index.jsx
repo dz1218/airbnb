@@ -1,9 +1,22 @@
-// import hyRequest from "@/service";
-// import { memo, useEffect, useState } from "react";
-import { memo } from "react";
+import { fetchHomeDataAction } from "@/store/modules/home";
+import { memo, useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import HomeBanner from "./homeCpns/homeBanner";
+import { HomeWrapper } from "./style";
 
 const Home = memo(() => {
-  return <div>home page</div>;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchHomeDataAction());
+  }, [dispatch]);
+
+  return (
+    <HomeWrapper>
+      <HomeBanner />
+      <div className="home-content"></div>
+    </HomeWrapper>
+  );
 });
 
 export default Home;
